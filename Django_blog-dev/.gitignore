@@ -1,0 +1,4 @@
+.idea/
+venv/
+fabfile.py
+whoosh_index/

@@ -1,0 +1,32 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Page not found</title>
+    <link href="{% static 'defaults/css/style.css' %}" rel="stylesheet">
+    <link rel="shortcut icon" href="{% static 'blog/img/favicon.ico' %}">
+</head>
+
+<body class="not-found">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-5">
+				<div class="ghost">
+					<a href="{% url 'blog:index' %}" class="body" target="_blank">
+						<i class="icon icon-flickr right top"></i>
+					</a>
+				</div>
+			</div>
+
+			<div class="col-sm-7">
+				<h2>Page not found</h2>
+				<p>你访问的页面大概是不存在的.<br>你可以<a href="{% url 'blog:index' %}">返回首页</a></p>
+			</div>
+		</div>
+	</div>
+
+    <script src="{% static 'defaults/js/jki7owr.js' %}"></script>
+    <script src="{% static 'defaults/js/custom.js' %}"></script>
+</body></html>
